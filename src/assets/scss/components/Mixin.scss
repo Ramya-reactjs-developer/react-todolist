@@ -1,0 +1,41 @@
+@import "./Main.scss";
+@import '../components/font.scss';
+
+@mixin Icon-size($Icon) {
+  color: $Icon;
+}
+
+@mixin flexCenter($justify: space-between, $align: center, $gap: 0) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin SideBarIcon($bg: $icons-bg) {
+  font-size: 1.6rem;
+  padding: 10px;
+  color: $icons-bg;
+  background: $bg;
+  width: 24px;
+  border-radius: 5px;
+}
+@mixin SideBarText($text: 1rem) {
+  font-size: 18px;
+  color: $PrimaryFont;
+  padding: $text;
+}
+@mixin R-icons($color: #9ea3a9) {
+  color: $color;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+@mixin line_count($line: 1) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

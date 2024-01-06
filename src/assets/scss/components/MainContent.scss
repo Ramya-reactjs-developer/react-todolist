@@ -1,0 +1,194 @@
+// import main
+// import mixin
+@import '../components/font.scss';
+@import "./Main.scss";
+@import "../components/Mixin.scss";
+
+.MainContent {
+  
+    
+    // background: $SecondaryBgBlack;
+    color: $icons-bg;
+    height: 100%;
+    width: 24%;
+    // // padding: 0px 10px 0px 230px;
+    // margin:220px
+    
+    //  50px 220px 439px;
+    // padding: 220px 620px;
+    padding: 120px 694px
+
+  
+   
+   
+  }
+  .addTask{
+    // padding: 70px 10px 0px 534px;
+       margin: 10px 10px 10px 0px;
+
+  }
+ .noTask{
+  border-radius: 16px;
+  background-color: #1f2229;
+  border: #1f2229;
+  padding: 20px;
+  margin: 10px;
+  width: 660px;
+ }
+  .AddTaskInput{
+    padding: 8px 18px 10px 85px;
+    // width: 472px;
+    height: 50px;
+    border-radius:4px;
+    width: 600px;
+
+ border: none;
+ background: $SecondaryBgBlack;
+
+  }
+  .AddTaskIcon{
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    bottom: 0px;
+    font-size: 2.8rem;
+    color: $icons1;
+
+   
+  }
+  .input-focus{
+   color: white;
+   padding: 10px 596px 10px 15px;
+   width: 135%;
+   height: 50px;
+   border-radius: 16px;
+   background-color: $PrimaryBgBlack;
+   border: $PrimaryBgBlack;
+   padding: 8px 18px 10px 85px;
+   
+   
+
+  }
+  input:focus-visible {
+    outline: unset;
+
+}
+.InputBox{
+  // position: fixed;
+  // top: 200px;
+  // right: 445px;
+  // padding: 0px 0px 0px 307px;
+
+}
+
+.headingText{    
+  display: flex;
+  align-items: center;
+  gap :15px;
+  // position: fixed;
+  // top: 136px;
+
+}
+.arrowIcon{
+  padding: 15px;
+}
+  input{
+    border-color: $PrimaryBgBlack;
+    font-size: 18px;
+  }
+  .ListedTasks{
+    width: 678px;
+    border-radius: 4px;
+    background-color: #1f2229;
+    border: #1f2229;
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+
+  }
+  
+  .ListingText{
+  display: flex;
+    .text{
+      padding: 0px 16px;
+    
+    }
+    
+
+  }
+
+  .line_count{
+    width: 538px;
+    @include line_count(2);
+  }
+  .listdateIconClock{
+    color: rgb(140, 176, 140);
+    padding-right: 10px;
+  }
+  .ListingIcons{
+
+    
+  }
+  .listlength{
+    padding-right: 10px;
+  }
+  .listdateIcon{
+    padding-right: 10px;
+    color: #d3ac6e;
+  }
+ h3{    padding-left: 10px;}
+ 
+
+  .roundoutline{
+    font-size: 32px;
+    color: $icons1;
+    cursor: pointer;
+  }
+
+.edit-btn{
+  font-size: 30px;
+    background: none ;
+    border: none;
+    color: $icons1;
+
+}
+
+.edit-btn:hover{
+  // background: #f077a0 !important;
+  // color: #1f2229;
+  // height: 36px;
+  // border-radius: 20px;
+  // width: 36px;
+  // margin: 6px;
+  cursor: pointer;
+}
+
+.delete-btn{
+  font-size: 30px;
+    background: none ;
+    border: none;
+    color: $icons1;
+}
+.delete-btn:hover{
+  // background: #f077a0 !important;
+  // color: #1f2229;
+  // border-radius: 20px;
+  // height: 36px;
+  
+  // width: 36px;
+  // margin: 6px;
+  cursor: pointer;
+}
+// .mainPosition{
+//   position: fixed;
+// }
+del{
+  width: 538px;
+  @include line_count(2);
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}

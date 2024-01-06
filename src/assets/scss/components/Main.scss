@@ -1,0 +1,43 @@
+@import '../components/font.scss';
+
+
+
+// Font
+
+$font_reg : 'poppins_regular', sans-serif;
+
+$font_med : 'poppins_medium', sans-serif;
+
+$font_bold : 'poppins_bold' , sans-serif;
+
+$font_black : 'poppins_black' , sans-serif;
+
+$font_thin : 'poppins_thin' , sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  // background-color: #17171f;
+  font-family: 'poppins_medium', sans-serif;
+}
+
+
+
+
+// colors
+$PrimaryBgBlack: #1f2229;
+$SecondaryBgBlack: #17171f;
+$icons1: #f077a0;
+$icons2: #6fc1bb;
+$icons3: #ae63de;
+$icons-bg: white;
+$PrimaryFont: #f0f1f2;
+$SecondaryFont: #74717a;
+$Icon: #eaecee;
+body{
+
+ 
+  background:$SecondaryBgBlack;
+  
+  
+  }

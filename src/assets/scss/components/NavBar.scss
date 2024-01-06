@@ -1,0 +1,51 @@
+// import main
+// import mixin
+@import "./Main.scss";
+@import "../components/Mixin.scss";
+@import '../components/font.scss';
+
+$Height: 40px;
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  background: $PrimaryBgBlack;
+  height: $Height;
+  align-items: center;
+  padding: 10px 10px;
+  position: fixed;
+  width: 100%;
+
+}
+
+.icon1 {
+  @include R-icons($Icon);
+}
+.icon2 {
+  @include R-icons($icons1);
+}
+
+.title {
+  font-size: 18px;
+  padding-top: 4px;
+  color: $PrimaryFont;
+}
+nav {
+  li {
+    list-style: none;
+  }
+}
+
+.Left-side {
+  @include flexCenter(flex-start, center, 0.5rem);
+
+}
+.Right-side {
+  @include flexCenter(flex-start, center, 0rem);
+}
+
+.img {
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+}
